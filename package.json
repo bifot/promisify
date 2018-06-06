@@ -1,0 +1,23 @@
+{
+  "name": "@bifot/promisify",
+  "version": "0.0.1",
+  "description": "Util for promisify packages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./ --exit"
+  },
+  "keywords": [
+    "promisify",
+    "util"
+  ],
+  "author": "Mikhail Semin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bifot/promisify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bifot/promisify/issues"
+  },
+  "homepage": "https://github.com/bifot/promisify#readme"
+}
