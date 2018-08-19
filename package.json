@@ -1,6 +1,6 @@
 {
   "name": "@bifot/promisify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Util for promisify packages.",
   "main": "index.js",
   "scripts": {
