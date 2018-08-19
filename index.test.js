@@ -8,3 +8,16 @@ it('fs.readdir via async/await', async () => {
 
   expect(files).to.be.a('array')
 })
+
+it('does not delete non-function properties', () => {
+  const package = {
+    prop: 'string',
+    anotherProp: 1,
+    sleep: (ms, cb) => setTimeout(cb, ms)
+  }
+
+  const promisifiedPackage = promisify(package)
+
+  expect(promisifiedPackage).to.have.property('prop')
+  expect(promisifiedPackage).to.have.property('anotherProp')
+})
